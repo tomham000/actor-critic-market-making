@@ -1,0 +1,5 @@
+/.idea/modules.xml
+/.idea/misc.xml
+/.idea/vcs.xml
+/simulated_environment/agent_training/a2c/a2c_logs/
+!simulated_environment/agent_training/a2c/a2c_logs/best_model.zip
