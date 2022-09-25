@@ -1,5 +1,6 @@
-/.idea/modules.xml
-/.idea/misc.xml
-/.idea/vcs.xml
+/.idea/
 /simulated_environment/agent_training/a2c/a2c_logs/
 !simulated_environment/agent_training/a2c/a2c_logs/best_model.zip
+/market_data/models/sacSK7LGUTU6H/
+!/market_data/models/sacSK7LGUTU6H/be
+/market_data/TSLA_data/

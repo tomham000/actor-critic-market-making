@@ -105,17 +105,17 @@ def run_total_simulation(a2c_agent: A2C, q_agent: QLearningAgent, q_env=RLEnviro
 
         avellaneda_results = run_avellaneda_agent_simulation(avellaneda_env)
         avellaneda_wealths.append(avellaneda_results['terminal_wealth'])
-        avellaneda_positions.append(avellaneda_results['average'])
+        avellaneda_positions.append(avellaneda_results['average_position'])
         avellaneda_trades.append(avellaneda_results['total_trades'])
 
         q_results = run_q_agent_simulation(q_env, q_agent)
         q_wealths.append(q_results['terminal_wealth'])
-        q_positions.append(q_results['average'])
+        q_positions.append(q_results['average_position'])
         q_trades.append(q_results['total_trades'])
 
         a2c_results = run_a2c_agent_simulation(a2c_env, a2c_agent)
         a2c_wealths.append(a2c_results['terminal_wealth'])
-        a2c_positions.append(a2c_results['average'])
+        a2c_positions.append(a2c_results['average_position'])
         a2c_trades.append(a2c_results['total_trades'])
     return {'q_agent':
                 {'wealths': q_wealths, 'positions': q_positions, 'trades': q_trades},
